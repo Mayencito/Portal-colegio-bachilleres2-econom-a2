@@ -1,0 +1,87 @@
+.fondo {
+  background-image: url("./../Imagenes/fondo.jfif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.component {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.993),
+    rgba(75, 73, 73, 0.993)
+  );
+  background-size: contain;
+  border: var(--bs-black-200);
+  border-radius: 0.25rem;
+  width: fit-content;
+  padding: 10px 30px 0.1px 30px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+/*
+el transform: translateX(-50%); se utiliza para centrar horizontalmente el elemento .component en la página.
+es -50 para moverlo hacia la izquierda, pq el punto de posicionamiento es el centro delelemento por left: 50%;
+*/
+.titulo-home {
+  color: rgb(0, 0, 0);
+  text-shadow:
+    0 0 10px rgb(255, 187, 0),
+    0 0 30px rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: fit-content;
+  padding: 10px 0px 0.1px 0px;
+  margin: 0 0 0 160px;
+}
+/*Poner 2 veces el tamaño y el color del text-shadow sirve para que se vea mas fuerte en la pagina
+*/
+.component a {
+  color: #0004ff;
+  font-size: large;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.component a:hover {
+  color: #cc00ff;
+  text-shadow: 0 0 20px rgb(255, 0, 191);
+}
+.card-img-top {
+  background-image: url("./../Imagenes/milagro-fondo.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.card-body {
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(145, 145, 145));
+  padding: 20px;
+}
+/*El linear-gradient es para que este degradado el color de fondo y no quede feo como un color solido
+*/
+.card-title {
+  color: rgb(255, 255, 255) !important;
+  font-size: x-large;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*El !important es para que el css quede encima del bootstrap, se usa pq sin ese el titulo no cambiaba de color
+*/
+.card-body p {
+  color: rgb(255, 255, 255);
+  font-size: large;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card-body ul {
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 20px;
+}
