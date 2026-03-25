@@ -25,6 +25,17 @@
 el transform: translateX(-50%); se utiliza para centrar horizontalmente el elemento .component en la página.
 es -50 para moverlo hacia la izquierda, pq el punto de posicionamiento es el centro delelemento por left: 50%;
 */
+.referencias {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.993),
+    rgba(110, 110, 110, 0.993)
+  );
+  background-size: contain;
+  border: var(--bs-black-200);
+  border-radius: 0.25rem;
+}
 .titulo-home {
   color: rgb(0, 0, 0);
   text-shadow:
@@ -38,17 +49,6 @@ es -50 para moverlo hacia la izquierda, pq el punto de posicionamiento es el cen
   padding: 10px 20px;
 }
 /*Poner 2 veces el tamaño y el color del text-shadow sirve para que se vea mas fuerte en la pagina
-*/
-.component nav ul {
-  padding-left: 0; /* Quita el padding por defecto de las listas */
-  margin-bottom: 0; /* Quita el margen por defecto de las listas */
-  flex-wrap: wrap; /* Permite que los elementos del menú se ajusten en varias líneas en pantallas pequeñas */
-}
-/*
-padding-left: 0; sirve para quitar el padding del menú
-margin-bottom: 0; sirve para quitar el margen del menú
-flex-wrap: wrap; sirve para que el menú se ajuste en varias líneas en pantallas pequeñas para que no se desborde
-en pantallas de celular
 */
 .component a {
   color: #0004ff;
